@@ -43,6 +43,10 @@ module PowerEnum::Reflection
       :has_enumerated
     end
 
+    def collection?
+      false
+    end
+
     def check_preloadable!
       return unless scope
       if scope.arity > 0
